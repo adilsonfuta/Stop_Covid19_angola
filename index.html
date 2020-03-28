@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Covid-19 | Angola API</title>
+    <meta name="description" content="Website de informação do Covid-19 em angola (Coronavirus angola)">
+    <meta name="keywords" content="Covid-19, angola, casos em angola, Coronavirus Angola">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="navbar">
+
+            <div class="container">
+
+                <h1 class="logo"><a href="index.html" class="">API Stop Covid-19</a></h1>
+
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="">Acessar Dados</a> </li>
+                    <li> <a href="">Como Ajudar</a> </li>
+                    <li><a href="">Cadastrar Suspeitas</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase_conteudo">
+                    <h1> <span class="text_primary">API STOP COVID-19 ANGOLA</span> </h1>
+                    <p class="lead">OBTENHA INFORMAÇÕES ATUALIZADAS SOBRE O COVID-19 EM ANGOLA</p>
+                    <a href="saibaM" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main id="zona_principal" class="container3">
+
+        <div class="zona_p1 box" id="box1">
+            <h1> ENTENDA COMO NOSSA API FUNCIONA</h1>
+            <p> O Webservice do coronavirus foi criado gratuitamente para que a populacão possa a
+                ter acesso dos dados atraves de aplicações desenvolvidas por programadores ou por
+                pessoas de conhecimentos necessarios.
+                Pelo fato da facto de ser gratuito pedimos a colaboração de todos informando "
+                casos suspeitos", contamos com a sua ajuda,
+                <span class="letras_vermelho">
+                    <a href="ajuda_cadastra">clique aqui.</a>
+                </span>
+            </p>
+
+            <p>
+                A estrutura da nossa api possui dois metodos sendo eles o
+                <span class="letras_vermelho">"listar"</span> e o
+                <span class="letras_vermelho">"encontrar"</span> ,
+                como o proprio nome sugere o listar retorna uma lista de todos as provincias
+                em ordem crescente envolvendo os numeros de casos registrados,
+                ja o encontrar necessita de um parâmetro, pois trata de um mêtodo de pesquisa,
+                ou seja, o retorno depende do parametro passado via URL. Para ambos os casos
+                o resultado sera uma lista de dados retornado via json.
+            </p>
+        </div>
+
+
+        <div class="zona_p2" id="saibaM">
+
+            <div id="box2" class="box">
+                <h3>ACESSANDO O WEBSERVICE</h3>
+                <p>
+                    Tantos os dados como a estrutura da api pode ser modificada ao longo do tempo,
+                    sendo assim pedimos a vossa compreensão e colaboração. Preencha o formulario
+                    abaixo e deixe a sua opnião para continuarmos a melhorar a api.
+                </p>
+            </div>
+
+
+            <div class="box" id="box3">
+                <p>
+                    Para ter acesso aos dados é bastante simples, a URL a ser usada é:
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, consequatur!
+                </p>
+                <p> URL: <a href=" http://stopCOVID19/angola_api/listar" target="_blank" class="url_api"
+                        rel="noopener noreferrer">
+                        http://stopCOVID19/angola_api/listar</a></p>
+
+                <div class="foto_api">
+                    <img src="img/AR.jpg" alt="foto da api listar">
+                </div>
+            </div>
+
+
+            <div class="box" id="box4">
+                <p>
+                    E para realizar uma pesquisa basta passar o metodo "encontrar" e o parametro,
+                    que é a provincia, logo retorna dados gerais da provincia.
+                </p>
+                <p> URL: <a href=" http://stopCOVID19/angola_api/encontrar/Luanda" target="_blank" class="url_api"
+                        rel="noopener noreferrer"> http://StopCovid19/angola_api/encontrar/Luanda</a></p>
+
+                <div class="foto_api">
+                    <img src="img/AR.jpg" alt="foto da api listar">
+                </div>
+            </div>
+
+            <!--   <div class="clear"></div> -->   
+           
+    </main>
+
+    <!--   <div class="clear"></div> -->   
+ 
+    <section class="info_adicional container3">
+        
+        <div class="box" id="box5">
+
+            <h3> DADOS ATUALIDADOS DA API</h3>
+            <p>
+                Os dados que alimentam a api são colhidos no site do ministerio da saúde, através de grandes portais de
+                noticia,
+                plataformas de monitoramento especializada. Mas contamos com a sua informação sobre possiveis casos.
+            </p>
+
+            <div class="iframe_mapa_angola">
+                <iframe src="mapa_angola.html" frameborder="0" name="iframe_mapa_ANGOLA"></iframe>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section class="contact" id="ajuda_cadastra">
+
+        <div class="container2">
+
+            <div class="form-wrap">
+
+                <form action="cadastro.py" method="GET">
+                    <div>
+                        <h3>CADASTRAR SUSPEITAS</h3>
+                    </div>
+
+                    <div>
+                        <label for="Nome">Nome Completo:</label>
+                        <input type="text" name="Nome" value="" required>
+                    </div>
+
+                    <div>
+                        <label for="Email">Endereço de Email:</label>
+                        <input type="email" name="Email" value="">
+                    </div>
+
+                    <div>
+                        <label for="Telefone">Numero de Telefone:</label>
+                        <input type="tel" name="Telefone" value="" required>
+                    </div>
+
+                    <div>
+                        <label for="Provincia">Provincia:</label>
+                        <select name="Provincia" id="Provincia">
+                            <option value="">Luanda</option>
+                            <option value="">Benguela</option>
+                            <option value="">Malanje</option>
+                            <option value="">Cabinda</option>
+                            <option value="">Cunene</option>
+                            <option value="">Huambo</option>
+                        </select>
+                    </div>
+
+                    <div class="radio">
+                        <label for="sintomas">Marque seus Sintomas:</label>
+                        <input type="checkbox" name="sintomas" value="febre" id="sin1"> Febres Altas (Superior a 37º)
+                        <br>
+                        <input type="checkbox" name="sintomas" value="tosses" id="sin2"> Tosses Constantes (Tosses secas
+                        regulares) <br>
+                        <input type="checkbox" name="sintomas" value="respirar" id="sin3"> Dificuldades em Respirar <br>
+
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="" cols="50" rows="10"></textarea>
+                    </div>
+
+                    <button class="btn2" type="submit">ENVIAR MENSAGEM</button>
+
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>API STOP COVID-19 ANGOLA &copy; Todos direitos reservados - 2020 </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html

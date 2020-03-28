@@ -1,0 +1,46 @@
+@import url("header_showcase.css");
+@import url("main_style.css");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+html, body{
+    font-family: roboto;
+    line-height: 1.7em;
+    font-size: 1.1em;
+}
+
+.letras_vermelho , .letras_vermelho a,.url_api {
+    color:var(--teste3);
+    font-weight: bolder;
+}
+
+a{
+    color: #333;
+    text-decoration: none;    
+}
+
+h1,h2,h3,h4{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.container{
+    margin: auto;
+    max-width: 1500px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
