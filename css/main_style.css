@@ -36,8 +36,8 @@
 
 
 .zona_p2  img{
-    width: 600px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
 }
 
 .clear{
@@ -63,10 +63,12 @@ section.contact{
 .container2{
     max-width: 40%;
     margin: auto;
-    padding: 22px; 
+    padding: 20px; 
     border-radius: 25px;
     background: #fff;
+    
 }
+
 
 section.contact .form-wrap {
     padding: 15px 25px;
@@ -113,9 +115,9 @@ section.contact .form-wrap .radio input{
 
 footer{
     text-align: center;
-    padding: 20px;
+    padding: 18px;
     background: var(--preto);
     color: #fff;
-    height: 90px;
+    height: 80px;
 }
 
