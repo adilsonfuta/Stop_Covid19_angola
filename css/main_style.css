@@ -65,7 +65,7 @@ section.contact{
     margin: auto;
     padding: 20px; 
     border-radius: 25px;
-    background: #fff;
+    background: var(--boxCor);
     
 }
 
